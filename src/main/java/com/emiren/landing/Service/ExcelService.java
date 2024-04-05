@@ -1,10 +1,10 @@
 package com.emiren.landing.Service;
 
+import org.apache.poi.ss.usermodel.Workbook;
+
 import java.io.IOException;
 
 public interface ExcelService {
+    public Workbook extractDataToExcel();
 
-    public void writeToExcel();
-    public boolean isCreated() throws IOException;
-    public void createExcelFile();
 }
